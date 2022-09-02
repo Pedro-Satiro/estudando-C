@@ -22,8 +22,6 @@ Formato de saída
 
 Apresentar a mensagem “Area = ” seguido pelo valor da variável área dada em m², conforme exemplo de saída, com 4 casas após o ponto decimal. Preste atenção nas unidades de medida usadas nos cálculos. Não esqueça de imprimir o fim de linha após o resultado.
 */
-
-
 #include <stdio.h>
 #include <string.h>
 #include <math.h>

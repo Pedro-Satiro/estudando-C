@@ -1,5 +1,5 @@
 /*
-Link:www.thehuxley.com/problem/16?quizId=7852
+Link: www.thehuxley.com/problem/16?quizId=7852
 Descrição
 Você está organizando um bingo e deseja que cada número sorteado apareça no telão.
 
