@@ -64,7 +64,29 @@ A saída consiste de 1 linha informando o percentual de atividades cumpridas, a 
 #include <stdlib.h>
 
 int main() {
+	double passados, resolvidos;
+	char conceito[10];
+	double cumpridas, aprovacao ;
+	scanf("%lf %lf", &passados, &resolvidos);
+	cumpridas = (resolvidos/passados)*100;
 
-
+	if (cumpridas < 20.0){
+		aprovacao = 4.40;
+		strcpy(conceito, "Pessimo");  
+	} else if (cumpridas < 40.0){
+		aprovacao = 31.65;
+		strcpy(conceito, "Ruim"); 
+	} else if (cumpridas < 60.0){
+		aprovacao = 56.82;
+		strcpy(conceito, "Bom");
+	} else if (cumpridas < 80.0){
+		aprovacao = 80.00;
+		strcpy(conceito, "Muito Bom"); 
+	} else if (cumpridas <= 100.0){
+		aprovacao = 94.00;
+		strcpy(conceito, "Excelente"); 
+	}
+	
+	printf("%.2lf%% %.2lf%% %s", cumpridas, aprovacao, conceito);
 	return 0;
 }
